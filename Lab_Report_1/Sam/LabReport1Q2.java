@@ -12,6 +12,8 @@ import java.util.Scanner;
  *
  * @author User
  */
+
+ //chosen
 public class LabReport1Q2 {
 
     public static void main(String[] args) {

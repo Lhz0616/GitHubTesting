@@ -3,6 +3,8 @@ package Assignment.LabReport1;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
+import jdk.javadoc.internal.doclets.formats.html.SourceToHTMLConverter;
+
 public class A1Q3 {
     public static void main(String[] args){
 
@@ -17,6 +19,8 @@ public class A1Q3 {
         String equation2 = scanner.nextLine();
 
         StringTokenizer st = new StringTokenizer(equation1, "x+y=");
+        System.out.println(st);
+        
         int counter= 0;
         while(st.hasMoreTokens()){
             eq1Element[counter++] = Integer.parseInt(st.nextToken());

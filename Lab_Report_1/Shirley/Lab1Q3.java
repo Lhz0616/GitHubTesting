@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Lab1Q3 {
+    //chosen xd
     public static void main(String[] args) {
 
 
