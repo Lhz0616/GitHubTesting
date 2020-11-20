@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package labreport1;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -17,7 +16,7 @@ import java.util.Scanner;
 public class LabReport1Q2 {
 
     public static void main(String[] args) {
-        //initialise
+        //initialise 
         int score1 = 0;
         int score2 = 0;
         int tempScore1; // first dice
@@ -27,13 +26,14 @@ public class LabReport1Q2 {
         Random rd = new Random();
         Scanner sc = new Scanner(System.in);
 
-        //process & output
+        // User input the number of rounds wanted to play
         System.out.print("Please set number of round to play: ");
         round = sc.nextInt();
         System.out.println("Number of rounds: " + round);
 
         while (true) {
 
+            // Generate the dice number for player 1
             tempScore1 = rd.nextInt(6) + 1;
             tempScore2 = rd.nextInt(6) + 1;
             System.out.println(tempScore1 + " " + tempScore2);

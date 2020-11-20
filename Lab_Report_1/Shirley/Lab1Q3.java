@@ -33,11 +33,11 @@ public class Lab1Q3 {
                 if ((((arr1[0] * arr2[1]) - (arr1[1] * arr2[0]))) == 0)
                     System.out.println("The equation has no solution");
 
-                //else {
-              //      int x = (((arr1[2] * arr2[1]) - (arr1[1] * arr2[2])) / ((arr1[0] * arr2[1]) - (arr1[1] * arr2[0])));
-              //      int y = (((arr1[0] * arr2[2]) - (arr1[2] * arr2[0])) / ((arr1[0] * arr2[1]) - (arr1[1] * arr2[0])));
-              //      System.out.println("x=" + x);
-               //     System.out.println("y=" + y);
-               // }
+                else {
+                    int x = (((arr1[2] * arr2[1]) - (arr1[1] * arr2[2])) / ((arr1[0] * arr2[1]) - (arr1[1] * arr2[0])));
+                    int y = (((arr1[0] * arr2[2]) - (arr1[2] * arr2[0])) / ((arr1[0] * arr2[1]) - (arr1[1] * arr2[0])));
+                    System.out.println("x=" + x);
+                    System.out.println("y=" + y);
+                }
             }
         }

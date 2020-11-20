@@ -1,5 +1,3 @@
-package Assignment.LabReport1;
-
 import java.util.Scanner;
 
 public class A1Q1 {

@@ -1,5 +1,3 @@
-package Assignment.LabReport1;
-
 import java.util.Arrays;
 
 public class A1Q2 {

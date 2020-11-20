@@ -1,9 +1,5 @@
-package Assignment.LabReport1;
-
 import java.util.Scanner;
 import java.util.StringTokenizer;
-
-import jdk.javadoc.internal.doclets.formats.html.SourceToHTMLConverter;
 
 public class A1Q3 {
     public static void main(String[] args){

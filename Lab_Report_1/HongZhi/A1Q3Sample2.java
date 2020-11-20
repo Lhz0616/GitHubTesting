@@ -1,5 +1,3 @@
-package Assignment.LabReport1;
-
 import java.util.*;
 
 public class A1Q3Sample2 {
