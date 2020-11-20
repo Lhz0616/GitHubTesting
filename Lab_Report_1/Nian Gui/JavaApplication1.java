@@ -5,10 +5,7 @@
  */
 package javaapplication1;
 
-/**
- *
- * @author chest
- */
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -22,22 +19,35 @@ public class JavaApplication1 {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
-        System.out.print("Enter three integer number: ");
+
+        //read a three integer numbers as String
+        System.out.print("Enter three integer numbers: ");
         String numberInput = sc.nextLine();
+
+        // read a line of two operands as String
         System.out.print("Enter two operands: ");
         String operandInput = sc.nextLine();
-        
+
+        //split three integers input by users into an array with size 3
         String[] numStr = numberInput.split(" ", 3);
+
+        //split two operands input by users into an array with size 2
         String[] ope = operandInput.split(" ", 2);
 
+        // create three variables n1, n2, n3 to store all three integers in numStr array and set them as int data type for further calculation
         int n1 = Integer.parseInt(numStr[0]);
         int n2 = Integer.parseInt(numStr[1]);
         int n3 = Integer.parseInt(numStr[2]);
+
+        // create two variables o1, o2 to store two operands in ope array
         String o1 = ope[0];
         String o2 = ope[1];
+
+        //initialize result=0
         double result = 0;
-        
+
+        //nested if statements. First if statement catch o1 and inside got another five if statements for different situation of o2
+        //calculation of result based on different pais of operands
         if(o1.equals("X")){
             if(o2.equals("X")){
                 result = (n1 * n2) * n3;
@@ -55,7 +65,9 @@ public class JavaApplication1 {
                 result = (n1 * n2) - n3;
             }
         }
-        
+
+        //nested if statements. First if statement catch o1 and inside got another five if statements for different situation of o2
+        //calculation of result based on different pais of operands
         if(o1.equals("D")){
             if(o2.equals("X")){
                 result = n1 / (n2 * n3);
@@ -73,7 +85,9 @@ public class JavaApplication1 {
                 result = (n1 / n2) - n3;
             }
         }
-        
+
+        //nested if statements. First if statement catch o1 and inside got another five if statements for different situation of o2
+        //calculation of result based on different pais of operands
         if(o1.equals("M")){
             if(o2.equals("X")){
                 result = n1 % (n2 * n3);
@@ -91,7 +105,9 @@ public class JavaApplication1 {
                 result = (n1 % n2) - n3;
             }
         }
-        
+
+        //nested if statements. First if statement catch o1 and inside got another five if statements for different situation of o2
+        //calculation of result based on different pais of operands
         if(o1.equals("A")){
             if(o2.equals("X")){
                 result = n1 + (n2 * n3);
@@ -109,7 +125,9 @@ public class JavaApplication1 {
                 result = (n1 + n2) - n3;
             }
         }
-        
+
+        //nested if statements. First if statement catch o1 and inside got another five if statements for different situation of o2
+        //calculation of result based on different pais of operands
         if(o1.equals("S")){
             if(o2.equals("X")){
                 result = n1 - (n2 * n3);
@@ -128,6 +146,7 @@ public class JavaApplication1 {
             }
         }
 
+        //Print the output
         System.out.println(n1+" "+o1+" "+n2+" "+o2+" "+n3+" = "+result);
 
     }
