@@ -4,11 +4,13 @@ public class Lab1Q3 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
+        // User input
         System.out.print("Enter Input Line1 : ");
         String input1 = scan.nextLine();
         System.out.print("Enter Input Line2 : ");
         String input2 = scan.nextLine();
 
+        // splitting the String according to the regular expression (regex)
         String[] equation1 = input1.split("[x+y=]+");
         String[] equation2 = input2.split("[x+y=]+");
 
@@ -39,8 +41,8 @@ public class Lab1Q3 {
         if ((a * d - b * c) == 0) System.out.println("The equation has no solution");
 
         else {
-            int x = (e * d) - (b * f)/ (a * d) - (b * c);
-            int y = (a * f) - (e * c)/ (a * d) - (b * c);
+            int x = (e * d - b * f)/ (a * d - b * c);
+            int y = (a * f - e * c)/ (a * d - b * c);
             System.out.println("x=" + x);
             System.out.println("y=" + y);
         }
