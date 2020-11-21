@@ -57,7 +57,7 @@ public class JavaApplication2 {
                 System.out.println("Player 2's turn : ");
                 System.out.println("Dice 1 : " + dice1);
                 System.out.println("Dice 2 : " + dice2);
-                if (dice == 6 && dicee2 == 6) {
+                if (dice1 == 6 && dice2 == 6) {
                     System.out.println("Player 2 got both dice with 6, roll again twice");
                     continue; // if first and second dice value are 6, the player 2 will reroll twice
 
