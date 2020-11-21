@@ -2,7 +2,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class JavaApplication2 {
+public class LabReport1Q2 {
 
     public static void main(String[] args) {
         //set initial score of both players as 0
