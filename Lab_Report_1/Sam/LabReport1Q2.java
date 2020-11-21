@@ -11,7 +11,7 @@ public class LabReport1Q2 {
         int dice1; // first dice
         int dice2; // second dice
         int playerTurn = 1; // this variable is declared to make sure the players roll the dices turn by turn
-                                       // if its odd means its player 1's turn and if its even means its player 2's turn
+        // if its odd means its player 1's turn and if its even means its player 2's turn
         int round;
         Random rd = new Random();
         Scanner sc = new Scanner(System.in);
@@ -50,10 +50,8 @@ public class LabReport1Q2 {
                 }
                 System.out.println("Player 1's score = " + scorePlayer1);
 
-            } 
-            
-            // the playerTurn is not odd, so its player 2's turn right now
-            else {  
+            } // the playerTurn is not odd, so its player 2's turn right now
+            else {
                 System.out.println("Player 2's turn : ");
                 System.out.println("Dice 1 : " + dice1);
                 System.out.println("Dice 2 : " + dice2);
@@ -76,24 +74,22 @@ public class LabReport1Q2 {
                 System.out.println("Player 2's score = " + scorePlayer2);
 
                 if (playerTurn == round * 2) { //if the condition is true, means that both player have finished their turns
-                    //determine and print the result of the game
-                    System.out.println();
-                    System.out.println("Player 1's final score : " + scorePlayer1);
-                    System.out.println("Player 2's final score : " + scorePlayer2);
-                    if (scorePlayer1 > scorePlayer2) {
-                        System.out.println("Player 1 wins! ");
-                    } else if (scorePlayer1 < scorePlayer2) {
-                        System.out.println("Player 2 wins! ");
-                    } else if (scorePlayer1 == scorePlayer2) {
-                        System.out.println("It's a draw!");
-                    }
                     break; //to break the while loop after last round
-
                 }
             }
             playerTurn++; // to change the turn of players
 
         }
-
+        //determine and print the result of the game
+        System.out.println();
+        System.out.println("Player 1's final score : " + scorePlayer1);
+        System.out.println("Player 2's final score : " + scorePlayer2);
+        if (scorePlayer1 > scorePlayer2) {
+            System.out.println("Player 1 wins! ");
+        } else if (scorePlayer1 < scorePlayer2) {
+            System.out.println("Player 2 wins! ");
+        } else if (scorePlayer1 == scorePlayer2) {
+            System.out.println("It's a draw!");
+        }
     }
 }
