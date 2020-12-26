@@ -4,6 +4,8 @@ public class Lab1Q3 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
+        // int long short byte boolean char
+        // String
         // User input
         System.out.print("Enter Input Line1 : ");
         String input1 = scan.nextLine();
