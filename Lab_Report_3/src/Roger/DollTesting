@@ -1,8 +1,6 @@
-package Lab_report_3;
+package Roger;
 
-import Lab_report_3.Doll;
-
-public class Doll_Tester {
+public class DollTesting {
     public static void main(String[]args){
         Doll a=new Doll("Barbie");
         a.randomGenerator();

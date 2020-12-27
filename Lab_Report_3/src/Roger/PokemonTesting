@@ -1,10 +1,6 @@
-package Lab_report_3;
+package Roger;
 
-
-import Lab_report_3.Pokemon;
-
-
-public class Pokemon_Tester {
+public class PokemonTesting {
     public static void main(String[]args){
         //Sample test 1
         Pokemon p = new Pokemon("25","Pikachu","Electric");
